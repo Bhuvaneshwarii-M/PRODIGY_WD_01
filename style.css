@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(199, 234, 245);
+}
+.banner {
+    position: relative; /* Ensure proper positioning for the pseudo-element */
+  }
+  
+  .banner::before {
+    content: '';
+    background-image: url('front_ml_resize_x6_toned.jpg');
+    background-repeat: no-repeat;
+    background-size: 1500px 900px;
+    opacity: 0.7; /* Adjust the opacity value to control transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo-element behind the content */
+    animation: dayNightCycle 7s linear infinite;
+  }
+  @keyframes dayNightCycle {
+    0% {
+        background-image: url('sunrise.jpeg');
+        background-repeat: no-repeat;
+        background-size: 1500px 900px; /* Sunrise colors */
+    }
+    50% {
+        background-image: url('midsun.jpg');
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+    background-size: 1500px 900px;
+    }
+    100% {
+        background: url('sunset.jpeg');
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+    background-size: 1500px 900px;
+         /* Sunset colors */
+    }
+}
+
+.header{
+    width:100%;
+    height: 40px;
+    background-color:grey;
+   
+   position: fixed;
+}
+.menu{
+    display: flex;
+    justify-content: right;
+    
+    
+}
+
+.nav{
+    color: black;
+    font-size: large;
+    font-weight: 300;
+    padding: 6px;
+    margin: 3px;
+    padding-right: 19px;
+    transition: background-color(0.3s, color 0.3s);
+    cursor: pointer;
+    height: 35px;
+}
+.nav:hover{
+    cursor: pointer;
+    height: 35px;
+    width: fit-content;
+    background-color: orangered;
+    color: black;
+    text-decoration: none;
+    
+    
+}
+.body1{
+    width: 100%;
+    height: 300px;
+    
+    
+    
+}
+.b1head{
+    width:70%;
+    height: 300px;
+    position: absolute;
+}
+.headingcontent{
+    position: relative;
+    margin-top: 163px;
+    margin-left: 95px;
+    line-height: 33px;
+   
+}
+.headingcontent h2{
+    font: 1200;
+    font-size:xx-large;
+    font-weight: bolder;
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.headingcontent h4{
+    font:800;
+    font-size: larger;
+    margin-top: 10px;
+    color: black;
+
+}
+.headingcontent h6{
+    
+    
+    text-align: justify;
+    margin-top: 10px;
+    column-gap: 4px;
+
+}
+.bike img{
+    height: 200px;
+    width: 240px;
+    
+    transition: transform 0.5s ease;
+    animation: moveBullet 7s linear infinite;
+}
+
+@keyframes moveBullet {
+    0% {
+        transform: translateX(0);
+        
+       
+       
+    }
+    100% {
+        transform: translateX(1100px);
+         /* Adjust the distance as needed */
+    }
+   
+}
+
+.getstart button{
+    margin-top: 37px;
+    margin-left: 390px;
+    width:160px;
+    height:40px;
+    font-size: 18px;
+    background-color: grey;
+    border: none;
+    border-radius: 7px;
+    color: black;
+}
+.body1design{
+    width: 100%;
+    height: 270px;
+    
+}
+
+.places{
+    width: 80%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,262px); 
+    row-gap: 8px;
+    margin-left: 133px; 
+    
+    
+    
+
+}
+.center{
+    margin-top: 80px;
+    margin-left: 77px;
+    font-size: larger;
+    font-size: 30px;
+}
+.placeimages img{
+    margin-top: 33px; 
+    height: 250px;
+    width: 250px;
+}
+
+.blogs{
+    margin-top: 33px;
+   
+    height: 400px;
+}
+.blogcontents{
+    display: flex;
+    flex-direction:row;
+    height: fit-content;
+     gap: 18px;
+    width: 80%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 133px;
+    background-color: linear-gradient(rgb(95, 230, 235),white,rgb(150, 230, 150));
+}
+.blog1{
+    margin-top: 33px;
+}
+.blog2{
+    margin-top:33px;
+}
+.blog1 img{
+    width: 300px;
+    height: 150px;
+    
+}
+.blog1 img:hover{
+    width: 400px;
+    height: 200px;
+}
+.blog2 img:hover{
+    width: 400px;
+    height: 200px;
+}
+.blog2 img{
+    width: 300px;
+    height: 150px;
+}
+.blogwords1{
+    text-align:justify;
+}
+.blogwords2{
+    text-align:justify;
+}
+.sec{
+    height: 60px;
+}
+
+
